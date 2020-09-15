@@ -1330,6 +1330,21 @@ section {
   background-size: cover;
 }
 
+@media screen and (max-width: 767px) {
+  .img-hei{
+    height: 600px !important;
+  }
+  .card
+  {
+    height: 550px !important;
+    width: 300px !important;
+  }
+  .img-height
+  {
+    background-size: cover;
+    height: auto;
+  }
+}
 /*--------------------------------------------------------------
 # Style for cards
 --------------------------------------------------------------*/
@@ -1337,4 +1352,15 @@ section {
 .card
 {
   box-shadow: 0 10px 10px black;
+}
+
+.btn-info
+{
+  border-radius: 30px !important;
+  padding: 10px 20px;
+}
+
+.img-height
+{
+  height: 350px !important;
 }
