@@ -1,6 +1,7 @@
 let allProducts = getAllProducts();
 let breadCrumb = document.querySelector('#bread-crumb');
 let heading = document.querySelector('#heading');
+let heading1 = document.querySelector('#heading1');
 let carouselImg1Location = document.querySelector('#carousel-1');
 let carouselImg2Location = document.querySelector('#carousel-2');
 let carouselImg3Location = document.querySelector('#carousel-3');
@@ -34,6 +35,7 @@ let rhymeBook = document.querySelector('#rhymes-1');
 let displayBook = (itemNumber) => {
     breadCrumb.innerText = allProducts[itemNumber].heading;
     heading.innerText = allProducts[itemNumber].heading;
+    heading1.innerText = allProducts[itemNumber].heading;
     carouselImg1Location.setAttribute('src',allProducts[itemNumber].carouselOne);
     carouselImg2Location.setAttribute('src',allProducts[itemNumber].carouselTwo);
     carouselImg3Location.setAttribute('src',allProducts[itemNumber].carouselThree);

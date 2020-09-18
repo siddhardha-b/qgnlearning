@@ -2,8 +2,6 @@ let allBookProducts = [
     {
         "heading": "Mathematics Book One",
         "carouselOne": "assets/img/maths/Counting_01-50_Web.jpg",
-        "carouselTwo": "assets/img/maths/Counting_01-50_Web.jpg",
-        "carouselThree": "assets/img/maths/Counting_01-50_Web.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -14,8 +12,6 @@ let allBookProducts = [
     {
         "heading": "Mathematics Book Two",
         "carouselOne": "assets/img/maths/MathWB_1-50_Web.jpg",
-        "carouselTwo": "assets/img/maths/MathWB_1-50_Web.jpg",
-        "carouselThree": "assets/img/maths/MathWB_1-50_Web.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -26,8 +22,6 @@ let allBookProducts = [
     {
         "heading": "Mathematics Book Three",
         "carouselOne": "assets/img/maths/Numbers_1-10_Web.jpg",
-        "carouselTwo": "assets/img/maths/Numbers_1-10_Web.jpg",
-        "carouselThree": "assets/img/maths/Numbers_1-10_Web.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -38,8 +32,6 @@ let allBookProducts = [
     {
         "heading": "Hindi Book One",
         "carouselOne": "assets/img/hindi/Hindi_AksharSurbhi_Web.jpg",
-        "carouselTwo": "assets/img/hindi/Hindi_AksharSurbhi_Web.jpg",
-        "carouselThree": "assets/img/hindi/Hindi_AksharSurbhi_Web.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -50,8 +42,6 @@ let allBookProducts = [
     {
         "heading": "Hindi Book Two",
         "carouselOne": "assets/img/hindi/Hindi_AksharAakriti_Web.jpg",
-        "carouselTwo": "assets/img/hindi/Hindi_AksharAakriti_Web.jpg",
-        "carouselThree": "assets/img/hindi/Hindi_AksharAakriti_Web.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -62,8 +52,6 @@ let allBookProducts = [
     {
         "heading": "Hindi Book Three",
         "carouselOne": "assets/img/hindi/Hindi_Varnmala_Web.jpg",
-        "carouselTwo": "assets/img/hindi/Hindi_Varnmala_Web.jpg",
-        "carouselThree": "assets/img/hindi/Hindi_Varnmala_Web.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -74,8 +62,6 @@ let allBookProducts = [
     {
         "heading": "Alphabets Book One",
         "carouselOne": "assets/img/alphabets/alphabets1.jpg",
-        "carouselTwo": "assets/img/alphabets/alphabets1.jpg",
-        "carouselThree": "assets/img/alphabets/alphabets1.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -86,8 +72,6 @@ let allBookProducts = [
     {
             "heading": "Alphabets Book Two",
             "carouselOne": "assets/img/alphabets/alphabets2.jpg",
-            "carouselTwo": "assets/img/alphabets/alphabets2.jpg",
-            "carouselThree": "assets/img/alphabets/alphabets2.jpg",
             "category": "Books",
             "clientName": "ASU Company",
             "ratingBar": "Something about client",
@@ -98,8 +82,6 @@ let allBookProducts = [
     {
             "heading": "Alphabets Book Three",
             "carouselOne": "assets/img/alphabets/alphabets3.jpg",
-            "carouselTwo": "assets/img/alphabets/alphabets3.jpg",
-            "carouselThree": "assets/img/alphabets/alphabets3.jpg",
             "category": "Books",
             "clientName": "ASU Company",
             "ratingBar": "Something about client",
@@ -110,8 +92,6 @@ let allBookProducts = [
     {
         "heading": "Colors Book One",
         "carouselOne": "assets/img/other/Learn_with_COLORS_Web.jpg",
-        "carouselTwo": "assets/img/other/Learn_with_COLORS_Web.jpg",
-        "carouselThree": "assets/img/other/Learn_with_COLORS_Web.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -122,8 +102,6 @@ let allBookProducts = [
     {
         "heading": "Rymes Book One",
         "carouselOne": "assets/img/other/Rymes_Web.jpg",
-        "carouselTwo": "assets/img/other/Rymes_Web.jpg",
-        "carouselThree": "assets/img/other/Rymes_Web.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",

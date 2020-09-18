@@ -5,24 +5,24 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>QGN Learning</title>
+  <title>All Our Products</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
   <!-- Vendor CSS Files -->
   <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/font-awesome-5.8.1.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/comments.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -55,7 +55,6 @@
 
 
 <main id="main1" class="d-none">
-
   <!-- ======= Breadcrumbs ======= -->
   <section id="breadcrumbs1" class="breadcrumbs">
     <div class="container-fluid">
@@ -64,196 +63,162 @@
         <div class="col-sm-4">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li id="bread-crumb"> All Products</li>
+            <li id="bread-crumb"></li>
           </ol>
-          <h2 id="heading">All Products</h2>
+          <h2 id="heading"></h2>
         </div>
         <div class="col-sm-4"></div>
-        <div class="col-sm-2 mt-2">
+        <div class="col-sm-2 mt-3">
           <button class="btn btn-get-started m-auto scrollto" id="view-all-prod">View All Our Products</button>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="super_container">
-    <header class="header" style="display: none;">
-      <div class="header_main">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
-              <div class="header_search">
-                <div class="header_search_content">
-                  <div class="header_search_form_container">
-                    <form action="#" class="header_search_form clearfix">
-                      <div class="custom_dropdown">
-                        <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
-                          <ul class="custom_list clc">
-                            <li><a class="clc" href="#">All Categories</a></li>
-                          </ul>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-xs-12 col-md-5 item-photo">
+        <img style="max-width:100%;" id="carousel-1"/>
+      </div>
+      <div class="col-xs-12 col-md-7 my-3" style="border:0px solid gray">
+        <!-- Datos del vendedor y titulo del producto -->
+        <h3 id="heading1"></h3>
+        <h5 style="color:#337ab7"><span id="category"></span> <a href="#" id="clientName"></a> · <small style="color:#337ab7" id="ratingBar"></small></h5>
+
+        <!-- Precios -->
+        <h6 class="title-price display-4"><small>PRICE</small></h6>
+        <h3 style="margin-top:0px;"><strike class="text-danger">INR 500</strike> <span id="priceTag"></span></h3>
+
+        <!-- Make it as favourite -->
+        <div class="container-fluid" style="padding-bottom:20px;">
+          <button class="btn btn-success w-50"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Now</button>
+          <h6><a href="#"><span class="glyphicon glyphicon-heart-empty" style="cursor:pointer;"></span> Mark as Favourite</a></h6>
+        </div>
+      </div>
+
+      <div class="col-xs-12 mt-5">
+        <ul class="menu-items nav nav-tabs">
+          <li class="active"><a href="#Description" data-toggle="tab">Description</a></li>
+          <li><a href="#Details" data-toggle="tab">Details</a></li>
+          <li><a href="#Reviews" data-toggle="tab">Reviews</a></li>
+        </ul>
+        <div style="width:100%;border-top:1px solid silver">
+
+          <div id="myTabContent" class="tab-content my-5">
+            <div class="tab-pane fade in active" id="Description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, at blanditiis consequuntur distinctio ea ex maiores non nulla optio quisquam repudiandae saepe tempore vel? Aliquam animi blanditiis consequuntur cum deserunt ea eligendi esse ex fugiat harum in iste laborum minima molestiae nam neque numquam omnis, possimus quae quam reiciendis repellendus repudiandae sapiente sed similique sit tempora vero! Ab ad cupiditate dolor ducimus eos esse et eveniet, fuga ipsum labore maxime minus mollitia nesciunt nisi omnis, optio placeat quae quidem quis quos sequi sunt ullam veniam. Accusamus atque, blanditiis, commodi, deleniti dolorum expedita facere iusto laborum mollitia quasi sint ullam vero.
+            </div>
+            <div class="tab-pane fade in" id="Details">
+              <div class="row">
+                <div class="col-sm-12">
+                  <table class="table table-hover">
+                    <tbody><tr>
+                      <th colspan="4">Additional Information</th>
+                    </tr>
+                    <tr>
+                      <td class="datasheet-features-type" itemprop="name">Title</td>
+                      <td>The Worlds Favourite : And Then There Were None, Murder on the Orient Express, The Murder of Roger Ackroyd Boxed Set</td>
+                      <td class="datasheet-features-type">Height</td>
+                      <td>12.9 </td>
+                    </tr>
+                    <tr>
+                      <td class="datasheet-features-type" itemprop="author">Author</td>
+                      <td>Agatha Christie</td>
+                      <td class="datasheet-features-type">Width</td>
+                      <td> 5.6 </td>
+                    </tr>
+                    <tr>
+                      <td class="datasheet-features-type" itemprop="isbn">ISBN-13</td>
+                      <td>9780008158613</td>
+                      <td class="datasheet-features-type">Binding</td>
+                      <td>
+                        <link hred="http://schema.org/Paperback" itemprop="bookFormat">Paperback</td>
+                    </tr>
+                    <tr>
+                      <td class="datasheet-features-type">ISBN-10</td>
+                      <td><span itemprop="isbn">#0008158614</span></td>
+                      <td class="datasheet-features-type">Spine Width</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td class="datasheet-features-type">Publisher</td>
+                      <td><span itemprop="publisher">Ecco (harpercollins)</span></td>
+                      <td class="datasheet-features-type">Pages</td>
+                      <td><span itemprop="numberOfPages">1040 </span></td>
+                    </tr>
+                    <tr>
+                      <td class="datasheet-features-type">Edition</td>
+                      <td><span itemprop="bookEdition"></span></td>
+                      <td class="datasheet-features-type">Availability</td>
+                      <td>In Stock</td>
+                    </tr>
+                    </tbody></table>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade in" id="Reviews">
+
+              <!--===== Comments Section ======-->
+
+              <div class="d-flex justify-content-center row">
+                <div class="d-flex flex-column">
+                  <div class="d-flex flex-row align-items-center text-left comment-top p-2 bg-white border-bottom px-4">
+                    <div class="profile-image"><img class="rounded-circle" src="/assets/img/qgn.jpg" width="60"></div>
+                    <div class="d-flex flex-column-reverse flex-grow-0 align-items-center votings ml-1"><i class="fa fa-sort-up fa-2x hit-voting"></i><span>127</span><i class="fa fa-sort-down fa-2x hit-voting"></i></div>
+                    <div class="d-flex flex-column ml-3">
+                      <div class="d-flex flex-row post-title">
+                        <h5>Is sketch 3.9.1 stable?</h5><span class="ml-2">(Jesshead)</span>
+                      </div>
+                      <div class="d-flex flex-row align-items-center align-content-center post-title"><span class="bdge mr-1">video</span><span class="mr-2 comments">13 comments&nbsp;</span><span class="mr-2 dot"></span><span>6 hours ago</span></div>
+                    </div>
+                  </div>
+                  <div class="coment-bottom bg-white p-2 px-4">
+                    <div class="d-flex flex-row add-comment-section mt-4 mb-4"><img class="img-fluid img-responsive rounded-circle mr-2" src="/assets/img/qgn.jpg" width="38"><input type="text" class="form-control mr-3" placeholder="Add comment"><button class="btn btn-primary" type="button">Comment</button></div>
+                    <div class="commented-section mt-2">
+                      <div class="d-flex flex-row align-items-center commented-user">
+                        <h5 class="mr-2">Corey oates</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">4 hours ago</span>
+                      </div>
+                      <div class="comment-text-sm"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+                      <div class="reply-section">
+                        <div class="d-flex flex-row align-items-center voting-icons"><i class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">10</span><span class="dot ml-2"></span>
+                          <h6 class="ml-2 mt-1">Reply</h6>
                         </div>
                       </div>
-                    </form>
+                    </div>
+                    <div class="commented-section mt-2">
+                      <div class="d-flex flex-row align-items-center commented-user">
+                        <h5 class="mr-2">Samoya Johns</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">5 hours ago</span>
+                      </div>
+                      <div class="comment-text-sm"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</span></div>
+                      <div class="reply-section">
+                        <div class="d-flex flex-row align-items-center voting-icons"><i class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">15</span><span class="dot ml-2"></span>
+                          <h6 class="ml-2 mt-1">Reply</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="commented-section mt-2">
+                      <div class="d-flex flex-row align-items-center commented-user">
+                        <h5 class="mr-2">Makhaya andrew</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">10 hours ago</span>
+                      </div>
+                      <div class="comment-text-sm"><span>Nunc sed id semper risus in hendrerit gravida rutrum. Non odio euismod lacinia at quis risus sed. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Enim facilisis gravida neque convallis a. In mollis nunc sed id. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Ultrices mi tempus imperdiet nulla malesuada pellentesque.</span></div>
+                      <div class="reply-section">
+                        <div class="d-flex flex-row align-items-center voting-icons"><i class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">25</span><span class="dot ml-2"></span>
+                          <h6 class="ml-2 mt-1">Reply</h6>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="single_product">
-      <div class="container-fluid" style=" background-color: #fff; padding: 11px;">
-        <div class="row">
-          <div class="col-lg-4 order-lg-1 order-2">
-            <div class="portfolio-details-container">
 
-              <div class="owl-carousel portfolio-details-carousel">
-                <img src="assets/img/hindi/Hindi_AksharSurbhi_Web.jpg" class="img-fluid img-hei" alt="" id="carousel-1">
-                <img src="assets/img/hindi/Hindi_AksharSurbhi_Web.jpg" class="img-fluid img-hei" alt="" id="carousel-2">
-                <img src="assets/img/hindi/Hindi_AksharSurbhi_Web.jpg" class="img-fluid img-hei" alt="" id="carousel-3">
-              </div>
-
-            </div>
-          </div>
-          <div class="col-lg-6 order-3">
-            <div class="product_description">
-              <div class="product_name" id="category">Acer Aspire 3 Celeron Dual Core - (2 GB/500 GB HDD/Windows 10 Home) A315-33 Laptop (15.6 inch, Black, 2.1 kg)</div>
-              <div class="product-rating"><span class="badge badge-success" id="rating-bar"><i class="fa fa-star"></i> 4.5 Star</span> <span class="rating-review">35 Ratings & 45 Reviews</span></div>
-              <div> <span class="product_price" id="price-tag">₹ 29,000</span> <strike class="product_discount"> <span style='color:black'>₹ 2,000</span> </strike> </div>
-              <div> <span class="product_saved">You Saved:</span> <span style='color:black'>₹ 2,000</span> </div>
-              <hr class="singleline">
-              <div> <span class="product_info">EMI starts at ₹ 2,000. No Cost EMI Available<span><br> <span class="product_info">Warranty: 6 months warranty<span><br> <span class="product_info">7 Days easy return policy<span><br> <span class="product_info">7 Days easy return policy<span><br> <span class="product_info">In Stock: 25 units sold this week<span> </div>
-
-              <div class="row mt-3">
-                <div class="col-xs-6"> <button type="button" class="btn btn-success shop-button">Buy Now</button>
-                  <div class="product_fav"><i class="fas fa-heart"></i></div>
-                </div>
-              </div>
-              <div class="row mt-3">
-                <div class="col-md-6"> <span class=" deal-text">More About The Book</span> </div>
-                <div class="col-md-6"> <a href="#" data-abc="true"> <span class="ml-auto view-all"></span> </a> </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <table class="col-md-12 table-hover p-3">
-                    <tbody>
-                    <tr class="row mt-10 py-2 text-height">
-                      <td class="col-md-4"><span class="p_specification font-weight-bold">Sales Package :</span> </td>
-                      <td class="col-md-8">
-                        <ul>
-                          <li>2 in 1 Laptop, Power Adaptor, Active Stylus Pen, User Guide, Warranty Documents</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="row mt-10 py-2 text-height">
-                      <td class="col-md-4"><span class="p_specification font-weight-bold">Model Number :</span> </td>
-                      <td class="col-md-8">
-                        <ul>
-                          <li> 14-dh0107TU </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="row mt-10 py-2 text-height">
-                      <td class="col-md-4"><span class="p_specification font-weight-bold">Part Number :</span> </td>
-                      <td class="col-md-8">
-                        <ul>
-                          <li>7AL87PA</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="row mt-10 py-2 text-height">
-                      <td class="col-md-4"><span class="p_specification font-weight-bold">Color :</span> </td>
-                      <td class="col-md-8">
-                        <ul>
-                          <li>Black</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="row mt-10 py-2 text-height">
-                      <td class="col-md-4"><span class="p_specification font-weight-bold">Suitable for :</span> </td>
-                      <td class="col-md-8">
-                        <ul>
-                          <li>Processing & Multitasking</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr class="row mt-10 py-2 text-height">
-                      <td class="col-md-4"><span class="p_specification font-weight-bold">Processor Brand :</span> </td>
-                      <td class="col-md-8">
-                        <ul>
-                          <li>Intel</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-<!--===== Comments Section ======-->
-
-  <div class="container mt-5 mb-5">
-    <div class="d-flex justify-content-center row">
-      <div class="d-flex flex-column col-md-8">
-        <div class="d-flex flex-row align-items-center text-left comment-top p-2 bg-white border-bottom px-4">
-          <div class="profile-image"><img class="rounded-circle" src="https://i.imgur.com/t9toMAQ.jpg" width="70"></div>
-          <div class="d-flex flex-column-reverse flex-grow-0 align-items-center votings ml-1"><i class="fa fa-sort-up fa-2x hit-voting"></i><span>127</span><i class="fa fa-sort-down fa-2x hit-voting"></i></div>
-          <div class="d-flex flex-column ml-3">
-            <div class="d-flex flex-row post-title">
-              <h5>Is sketch 3.9.1 stable?</h5><span class="ml-2">(Jesshead)</span>
-            </div>
-            <div class="d-flex flex-row align-items-center align-content-center post-title"><span class="bdge mr-1">video</span><span class="mr-2 comments">13 comments&nbsp;</span><span class="mr-2 dot"></span><span>6 hours ago</span></div>
-          </div>
-        </div>
-        <div class="coment-bottom bg-white p-2 px-4">
-          <div class="d-flex flex-row add-comment-section mt-4 mb-4"><img class="img-fluid img-responsive rounded-circle mr-2" src="https://i.imgur.com/qdiP4DB.jpg" width="38"><input type="text" class="form-control mr-3" placeholder="Add comment"><button class="btn btn-primary" type="button">Comment</button></div>
-          <div class="commented-section mt-2">
-            <div class="d-flex flex-row align-items-center commented-user">
-              <h5 class="mr-2">Corey oates</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">4 hours ago</span>
-            </div>
-            <div class="comment-text-sm"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
-            <div class="reply-section">
-              <div class="d-flex flex-row align-items-center voting-icons"><i class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">10</span><span class="dot ml-2"></span>
-                <h6 class="ml-2 mt-1">Reply</h6>
-              </div>
-            </div>
-          </div>
-          <div class="commented-section mt-2">
-            <div class="d-flex flex-row align-items-center commented-user">
-              <h5 class="mr-2">Samoya Johns</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">5 hours ago</span>
-            </div>
-            <div class="comment-text-sm"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</span></div>
-            <div class="reply-section">
-              <div class="d-flex flex-row align-items-center voting-icons"><i class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">15</span><span class="dot ml-2"></span>
-                <h6 class="ml-2 mt-1">Reply</h6>
-              </div>
-            </div>
-          </div>
-          <div class="commented-section mt-2">
-            <div class="d-flex flex-row align-items-center commented-user">
-              <h5 class="mr-2">Makhaya andrew</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">10 hours ago</span>
-            </div>
-            <div class="comment-text-sm"><span>Nunc sed id semper risus in hendrerit gravida rutrum. Non odio euismod lacinia at quis risus sed. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Enim facilisis gravida neque convallis a. In mollis nunc sed id. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Ultrices mi tempus imperdiet nulla malesuada pellentesque.</span></div>
-            <div class="reply-section">
-              <div class="d-flex flex-row align-items-center voting-icons"><i class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">25</span><span class="dot ml-2"></span>
-                <h6 class="ml-2 mt-1">Reply</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</main><!-- End #main -->
-
+</main>
 
 <main id="main">
 
@@ -592,8 +557,6 @@
 
 </main><!-- End #main -->
 
-
-
 <!-- ======= Footer ======= -->
 <footer id="footer">
 
@@ -666,6 +629,8 @@
 <!-- Vendor JS Files -->
 <script src="assets/vendor/jquery/jquery.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap3.3.0.js"></script>
+<script src="assets/js/jquery1.11.1.js"></script>
 <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
 <script src="assets/vendor/php-email-form/validate.js"></script>
 <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
@@ -675,6 +640,7 @@
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/js/products.js"></script>
 <script src="assets/js/productclick.js"></script>
+
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
