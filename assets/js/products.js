@@ -1,7 +1,7 @@
 let allBookProducts = [
     {
         "heading": "Mathematics Book One",
-        "carouselOne": "assets/img/maths/Counting_01-50_Web.jpg",
+        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600581669/img/maths/Counting_01-50_Web_g7nikw.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -11,7 +11,7 @@ let allBookProducts = [
     },
     {
         "heading": "Mathematics Book Two",
-        "carouselOne": "assets/img/maths/MathWB_1-50_Web.jpg",
+        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600581671/img/maths/MathWB_1-50_Web_srdomu.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -21,7 +21,7 @@ let allBookProducts = [
     },
     {
         "heading": "Mathematics Book Three",
-        "carouselOne": "assets/img/maths/Numbers_1-10_Web.jpg",
+        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600581684/img/maths/Numbers_1-10_Web_lycgwu.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -31,7 +31,7 @@ let allBookProducts = [
     },
     {
         "heading": "Hindi Book One",
-        "carouselOne": "assets/img/hindi/Hindi_AksharSurbhi_Web.jpg",
+        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600581662/img/hindi/Hindi_AksharSurbhi_Web_x9ym5s.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -51,7 +51,7 @@ let allBookProducts = [
     },
     {
         "heading": "Hindi Book Three",
-        "carouselOne": "assets/img/hindi/Hindi_Varnmala_Web.jpg",
+        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600581664/img/hindi/Hindi_Varnmala_Web_n4d1xu.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -61,7 +61,7 @@ let allBookProducts = [
     },
     {
         "heading": "Alphabets Book One",
-        "carouselOne": "assets/img/alphabets/alphabets1.jpg",
+        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600581665/img/alphabets/alphabets1_phabmx.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -71,7 +71,7 @@ let allBookProducts = [
     },
     {
             "heading": "Alphabets Book Two",
-            "carouselOne": "assets/img/alphabets/alphabets2.jpg",
+            "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600581665/img/alphabets/alphabets2_ats3bg.jpg",
             "category": "Books",
             "clientName": "ASU Company",
             "ratingBar": "Something about client",
@@ -91,7 +91,7 @@ let allBookProducts = [
     },
     {
         "heading": "Colors Book One",
-        "carouselOne": "assets/img/other/Learn_with_COLORS_Web.jpg",
+        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600581814/img/other/Learn_with_COLORS_Web_mnh2mx.jpg",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
