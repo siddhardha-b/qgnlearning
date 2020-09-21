@@ -1,1 +1,222 @@
-!function(n){"use strict";n(window).on("load",function(){n("#preloader").length&&n("#preloader").delay(100).fadeOut("slow",function(){n(this).remove()})});var o,a=n("#header").outerHeight()-2;n(document).on("click",".nav-menu a, .mobile-nav a, .scrollto",function(o){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=n(this.hash);if(e.length){o.preventDefault();var t=e.offset().top-a;return"#header"==n(this).attr("href")&&(t=0),n("html, body").animate({scrollTop:t},1500,"easeInOutExpo"),n(this).parents(".nav-menu, .mobile-nav").length&&(n(".nav-menu .active, .mobile-nav .active").removeClass("active"),n(this).closest("li").addClass("active")),n("body").hasClass("mobile-nav-active")&&(n("body").removeClass("mobile-nav-active"),n(".mobile-nav-toggle i").toggleClass("icofont-navigation-menu icofont-close"),n(".mobile-nav-overly").fadeOut()),!1}}}),n(document).ready(function(){var o,e;window.location.hash&&(o=window.location.hash,n(o).length&&(e=n(o).offset().top-a,n("html, body").animate({scrollTop:e},1500,"easeInOutExpo")))}),n(".nav-menu").length?(o=n(".nav-menu").clone().prop({class:"mobile-nav d-lg-none"}),n("body").append(o),n("body").prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>'),n("body").append('<div class="mobile-nav-overly"></div>'),n(document).on("click",".mobile-nav-toggle",function(o){n("body").toggleClass("mobile-nav-active"),n(".mobile-nav-toggle i").toggleClass("icofont-navigation-menu icofont-close"),n(".mobile-nav-overly").toggle()}),n(document).on("click",".mobile-nav .drop-down > a",function(o){o.preventDefault(),n(this).next().slideToggle(300),n(this).parent().toggleClass("active")}),n(document).click(function(o){var e=n(".mobile-nav, .mobile-nav-toggle");e.is(o.target)||0!==e.has(o.target).length||n("body").hasClass("mobile-nav-active")&&(n("body").removeClass("mobile-nav-active"),n(".mobile-nav-toggle i").toggleClass("icofont-navigation-menu icofont-close"),n(".mobile-nav-overly").fadeOut())})):n(".mobile-nav, .mobile-nav-toggle").length&&n(".mobile-nav, .mobile-nav-toggle").hide();var e=n("section"),i=n(".nav-menu, #mobile-nav");function t(){AOS.init({duration:1e3,once:!0})}n(window).on("scroll",function(){var t=n(this).scrollTop()+200;e.each(function(){var o=n(this).offset().top,e=o+n(this).outerHeight();o<=t&&t<=e&&(t<=e&&i.find("li").removeClass("active"),i.find('a[href="#'+n(this).attr("id")+'"]').parent("li").addClass("active")),t<300&&n(".nav-menu ul:first li:first").addClass("active")})}),n(window).scroll(function(){100<n(this).scrollTop()?n("#header").addClass("header-scrolled"):n("#header").removeClass("header-scrolled")}),100<n(window).scrollTop()&&n("#header").addClass("header-scrolled"),n(window).scroll(function(){100<n(this).scrollTop()?n(".back-to-top").fadeIn("slow"):n(".back-to-top").fadeOut("slow")}),n(".back-to-top").click(function(){return n("html, body").animate({scrollTop:0},1500,"easeInOutExpo"),!1}),n(".skills-content").waypoint(function(){n(".progress .progress-bar").each(function(){n(this).css("width",n(this).attr("aria-valuenow")+"%")})},{offset:"80%"}),n(window).on("load",function(){var o=n(".portfolio-container").isotope({itemSelector:".portfolio-item"});n("#portfolio-flters li").on("click",function(){n("#portfolio-flters li").removeClass("filter-active"),n(this).addClass("filter-active"),o.isotope({filter:n(this).data("filter")}),t()}),n(document).ready(function(){n(".venobox").venobox({share:!1})})}),n(".portfolio-details-carousel").owlCarousel({autoplay:!0,dots:!0,loop:!0,items:1}),n(window).on("load",function(){t()})}(jQuery),$("#recipeCarousel").carousel({interval:1e4}),$(".carousel .carousel-item").each(function(){var o=$(this).next();o.length||(o=$(this).siblings(":first")),o.children(":first-child").clone().appendTo($(this));for(var e=0;e<3;e++)(o=o.next()).length||(o=$(this).siblings(":first")),o.children(":first-child").clone().appendTo($(this))});
+!(function($) {
+  "use strict";
+
+  // Preloader
+  $(window).on('load', function() {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function() {
+        $(this).remove();
+      });
+    }
+  });
+
+  // Smooth scroll for the navigation menu and links with .scrollto classes
+  var scrolltoOffset = $('#header').outerHeight() - 2;
+  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      if (target.length) {
+        e.preventDefault();
+
+        var scrollto = target.offset().top - scrolltoOffset;
+        if ($(this).attr("href") == '#header') {
+          scrollto = 0;
+        }
+
+        $('html, body').animate({
+          scrollTop: scrollto
+        }, 1500, 'easeInOutExpo');
+
+        if ($(this).parents('.nav-menu, .mobile-nav').length) {
+          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+          $(this).closest('li').addClass('active');
+        }
+
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          $('.mobile-nav-overly').fadeOut();
+        }
+        return false;
+      }
+    }
+  });
+
+  // Activate smooth scroll on page load with hash links
+  $(document).ready(function() {
+    if (window.location.hash) {
+      var initial_nav = window.location.hash;
+      if ($(initial_nav).length) {
+        var scrollto = $(initial_nav).offset().top - scrolltoOffset;
+        $('html, body').animate({
+          scrollTop: scrollto
+        }, 1500, 'easeInOutExpo');
+      }
+    }
+  });
+
+  // Mobile Navigation
+  if ($('.nav-menu').length) {
+    var $mobile_nav = $('.nav-menu').clone().prop({
+      class: 'mobile-nav d-lg-none'
+    });
+    $('body').append($mobile_nav);
+    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+    $('body').append('<div class="mobile-nav-overly"></div>');
+
+    $(document).on('click', '.mobile-nav-toggle', function(e) {
+      $('body').toggleClass('mobile-nav-active');
+      $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+      $('.mobile-nav-overly').toggle();
+    });
+
+    $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
+      e.preventDefault();
+      $(this).next().slideToggle(300);
+      $(this).parent().toggleClass('active');
+    });
+
+    $(document).click(function(e) {
+      var container = $(".mobile-nav, .mobile-nav-toggle");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          $('.mobile-nav-overly').fadeOut();
+        }
+      }
+    });
+  } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
+    $(".mobile-nav, .mobile-nav-toggle").hide();
+  }
+
+  // Navigation active state on scroll
+  var nav_sections = $('section');
+  var main_nav = $('.nav-menu, #mobile-nav');
+
+  $(window).on('scroll', function() {
+    var cur_pos = $(this).scrollTop() + 200;
+
+    nav_sections.each(function() {
+      var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        if (cur_pos <= bottom) {
+          main_nav.find('li').removeClass('active');
+        }
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+      }
+      if (cur_pos < 300) {
+        $(".nav-menu ul:first li:first").addClass('active');
+      }
+    });
+  });
+
+  // Toggle .header-scrolled class to #header when page is scrolled
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#header').addClass('header-scrolled');
+    } else {
+      $('#header').removeClass('header-scrolled');
+    }
+  });
+
+  if ($(window).scrollTop() > 100) {
+    $('#header').addClass('header-scrolled');
+  }
+
+  // Back to top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+    }
+  });
+
+  $('.back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
+  // Skills section
+  $('.skills-content').waypoint(function() {
+    $('.progress .progress-bar').each(function() {
+      $(this).css("width", $(this).attr("aria-valuenow") + '%');
+    });
+  }, {
+    offset: '80%'
+  });
+
+  // Porfolio isotope and filter
+  $(window).on('load', function() {
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item'
+    });
+
+    $('#portfolio-flters li').on('click', function() {
+      $("#portfolio-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+      aos_init();
+    });
+
+    // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function() {
+      $('.venobox').venobox({
+        'share': false
+      });
+    });
+  });
+
+  // Portfolio details carousel
+  $(".portfolio-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
+  // Init AOS
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }
+  $(window).on('load', function() {
+    aos_init();
+  });
+
+})(jQuery);
+
+
+// carousel for main page
+
+$('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .carousel-item').each(function(){
+  var minPerSlide = 3;
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  for (var i=0;i<minPerSlide;i++) {
+    next=next.next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
