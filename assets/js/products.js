@@ -1,7 +1,7 @@
 let allBookProducts = [
     {
         "heading": "Mathematics Book One",
-        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591569/qgn/maths/countingnumber_yap9dq.webp",
+        "carouselOne": "assets/qgn/maths/countingnumber.webp",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -11,7 +11,7 @@ let allBookProducts = [
     },
     {
         "heading": "Mathematics Book Two",
-        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591570/qgn/maths/learn1-50_vhvcbq.webp",
+        "carouselOne": "assets/qgn/maths/learn1-50.webp",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -21,7 +21,7 @@ let allBookProducts = [
     },
     {
         "heading": "Mathematics Book Three",
-        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591570/qgn/maths/number1-5_b1uub8.webp",
+        "carouselOne": "assets/qgn/maths/countingnumber.webp/number1-5.webp",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -31,7 +31,7 @@ let allBookProducts = [
     },
     {
         "heading": "Hindi Book One",
-        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591582/qgn/hindi/AksharSurabhi_lks9ar.webp",
+        "carouselOne": "assets/qgn/hindi/AksharSurabhi_.webp",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -41,7 +41,7 @@ let allBookProducts = [
     },
     {
         "heading": "Hindi Book Two",
-        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591576/qgn/hindi/aksharAkruthi_oqsolj.webp",
+        "carouselOne": "assets/qgn/hindi/aksharAkruthi.webp",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -51,7 +51,7 @@ let allBookProducts = [
     },
     {
         "heading": "Hindi Book Three",
-        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591583/qgn/hindi/Varnamala_d7xlk4.webp",
+        "carouselOne": "assets/qgn/hindi/Varnamala.webp",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -61,7 +61,7 @@ let allBookProducts = [
     },
     {
         "heading": "Alphabets Book One",
-        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591591/qgn/alphabets/alphabets1_ecaeyq.webp",
+        "carouselOne": "assets/qgn/alphabets/alphabets1.webp",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -71,7 +71,7 @@ let allBookProducts = [
     },
     {
             "heading": "Alphabets Book Two",
-            "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591590/qgn/alphabets/alphabets2_mhhus2.webp",
+            "carouselOne": "assets/qgn/alphabets/alphabets2.webp",
             "category": "Books",
             "clientName": "ASU Company",
             "ratingBar": "Something about client",
@@ -81,7 +81,7 @@ let allBookProducts = [
     },
     {
             "heading": "Alphabets Book Three",
-            "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591587/qgn/alphabets/alphabets3_cvxqg5.webp",
+            "carouselOne": "assets/qgn/alphabets/alphabets3.webp",
             "category": "Books",
             "clientName": "ASU Company",
             "ratingBar": "Something about client",
@@ -91,7 +91,7 @@ let allBookProducts = [
     },
     {
         "heading": "Colors Book One",
-        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591570/qgn/others/ColorsBook1_ur3b68.webp",
+        "carouselOne": "assets/qgn/others/ColorsBook1.webp",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",
@@ -101,7 +101,7 @@ let allBookProducts = [
     },
     {
         "heading": "Rymes Book One",
-        "carouselOne": "https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591571/qgn/others/rhymes_ayaxrr.webp",
+        "carouselOne": "assets/qgn/others/rhymes.webp",
         "category": "Books",
         "clientName": "ASU Company",
         "ratingBar": "Something about client",

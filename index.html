@@ -24,7 +24,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -34,7 +34,7 @@
 <header id="header" class="fixed-top">
   <div class="container-fluid d-flex align-items-center">
 
-    <a href="index.html" class="logo mr-3"><img src="https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591530/qgn/logo_ek8zw0.webp" alt="" class="img-fluid"></a>
+    <a href="index.html" class="logo mr-3"><img src="assets/qgn/logo.webp" alt="" class="img-fluid"></a>
 
     <h1 class="logo"><a href="index.html">QGN Learning</a></h1>
 
@@ -65,7 +65,7 @@
         </div>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-        <img src="https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591584/qgn/heroImage_egtrff.webp" class="img-fluid animated" alt="">
+        <img src="assets/qgn/heroImage.webp" class="img-fluid animated" alt="">
       </div>
     </div>
   </div>
@@ -124,7 +124,7 @@
               <div class="card mb-3">
                 <div class="portfolio-img">
                   <div class="view overlay">
-                    <img class="card-img-top img-height" src="https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591591/qgn/alphabets/alphabets1_ecaeyq.webp"
+                    <img class="card-img-top img-height" src="assets/qgn/alphabets/alphabets1.webp"
                          alt="Card image cap">
                     <a href="#!">
                       <div class="mask rgba-white-slight"></div>
@@ -150,7 +150,7 @@
               <div class="card mb-3">
                 <div class="portfolio-img">
                   <div class="view overlay">
-                    <img class="card-img-top img-height" src="https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591582/qgn/hindi/AksharSurabhi_lks9ar.webp"
+                    <img class="card-img-top img-height" src="assets/qgn/hindi/AksharSurabhi.webp"
                          alt="Card image cap">
                     <a href="#!">
                       <div class="mask rgba-white-slight"></div>
@@ -176,7 +176,7 @@
               <div class="card mb-3">
                 <div class="portfolio-img">
                   <div class="view overlay">
-                    <img class="card-img-top img-height" src="https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591569/qgn/maths/countingnumber_yap9dq.webp"
+                    <img class="card-img-top img-height" src="assets/qgn/maths/countingnumber.webp"
                          alt="Card image cap">
                     <a href="#!">
                       <div class="mask rgba-white-slight"></div>
@@ -202,7 +202,7 @@
               <div class="card mb-3">
                 <div class="portfolio-img">
                   <div class="view overlay">
-                    <img class="card-img-top img-height" src="https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591570/qgn/others/ColorsBook1_ur3b68.webp"
+                    <img class="card-img-top img-height" src="assets/qgn/others/ColorsBook1.webp"
                          alt="Card image cap">
                     <a href="#!">
                       <div class="mask rgba-white-slight"></div>
@@ -228,7 +228,7 @@
               <div class="card mb-3">
                 <div class="portfolio-img">
                   <div class="view overlay">
-                    <img class="card-img-top img-height" src="https://res.cloudinary.com/dgz98jrcd/image/upload/v1600591571/qgn/others/rhymes_ayaxrr.webp"
+                    <img class="card-img-top img-height" src="assets/qgn/others/rhymes.webp"
                          alt="Card image cap">
                     <a href="#!">
                       <div class="mask rgba-white-slight"></div>
@@ -320,6 +320,36 @@
     </div>
   </section><!-- End Services Section -->
 
+
+  <!-- modal for suggestions -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Suggest Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label>Suggestion</label>
+              <textarea name="" class="form-control" id="" cols="30" rows="10" placeholder="Suggest us which book you are after"></textarea></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- ======= Suggestion Section ======= -->
   <section id="cta" class="cta">
     <div class="container" data-aos="zoom-in">
@@ -329,9 +359,15 @@
           <h3>Didn't find the book you want?</h3>
           <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, asperiores?</p>
         </div>
+
         <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" href="#">Suggest Us</a>
+
+          <a href="" class="cta-btn align-middle" data-toggle="modal" data-target="#exampleModal">
+            Suggest Us
+          </a>
+
         </div>
+
       </div>
 
     </div>
@@ -372,7 +408,6 @@
               <p>+91-8766308606</p>
             </div>
 
-            <iframe src="https://www.google.com/maps/place/Netaji+Subhas+University+of+Technology/@28.6083976,77.0364054,17z/data=!4m8!1m2!2m1!1sNSUT+IIF,+Azad+Hind+Fauj+Marg+delhi!3m4!1s0x390d05dd375e5a13:0x108adaa3abe4bd07!8m2!3d28.6078176!4d77.0406147" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
           </div>
 
         </div>
