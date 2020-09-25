@@ -1951,3 +1951,24 @@ ul {
 .progress {
   margin-right: 10px;
 }
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+@media (min-width: 390px) {
+
+    .carousel-inner {
+      margin-left: 20px !important;
+    }
+}
+@media (min-width: 1024px) {
+
+  .carousel-inner {
+    margin: auto !important;
+  }
+}
