@@ -1960,15 +1960,33 @@ ul {
   right: 0;
 }
 
+
+/*
+
+Bootstrap owl carousel - increasing the size [home page]
+
+*/
+
 @media (min-width: 390px) {
 
-    .carousel-inner {
-      margin-left: 20px !important;
-    }
+  .carousel-inner {
+    margin-left: 20px !important;
+  }
 }
 @media (min-width: 1024px) {
 
   .carousel-inner {
     margin: auto !important;
   }
+}
+
+/*
+
+        Contact information home page
+
+*/
+
+.contactinformation
+{
+  font-size: 20px !important;
 }
